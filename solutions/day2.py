@@ -43,4 +43,4 @@ if __name__ == "__main__":
         rounds = [r.strip('\n').split(' ') for r in file.readlines()]
 
     print("Part 1:", sum(map(calc_round_score, rounds)))
-    print("Part 2:", sum(map(lambda r: calc_round_score(r, True), rounds)))  # 11578 too low, 14344 too high
+    print("Part 2:", sum(map(lambda r: calc_round_score(r, True), rounds)))
