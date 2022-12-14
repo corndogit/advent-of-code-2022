@@ -10,7 +10,7 @@ def part_1(instructions):
             next_signal += 40
 
         clock += 1
-        if ins[0] == "addx" and len(ins) == 2:
+        if ins[0] == "addx":
             if clock == next_signal:
                 signal_strengths.append(register_value * clock)
                 next_signal += 40
